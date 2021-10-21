@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/biru"
+    tools:context=".PersegiPanjang">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/title_persegipanjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PERSEGI PANJANG"
+            android:textAlignment="center"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingTop="10sp"
+            android:paddingBottom="5sp"
+            />
+
+        <ImageView
+            android:id="@+id/img_persegi"
+            android:layout_width="215dp"
+            android:layout_height="154dp"
+            android:layout_below="@+id/title_persegipanjang"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/persegipanjang" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textbil1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15sp"
+        android:paddingTop="20dp"
+        android:textStyle="bold |italic"
+        android:text="Masukkan Bilangan :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/layout_content"
+        />
+
+    <EditText
+        android:id="@+id/et_panjangpsgpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textbil1"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="15sp"
+        android:layout_margin="8dp"
+        android:inputType="number"
+        android:hint="Panjang (cm)"
+        />
+
+    <EditText
+        android:id="@+id/et_lebarpsgpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_panjangpsgpj"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="15sp"
+        android:layout_margin="8dp"
+        android:inputType="number"
+        android:hint="Lebar (cm)"
+        />
+
+    <Button
+        android:id="@+id/btn_hasil_psgpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_lebarpsgpj"
+        android:text="Hitung"
+        android:layout_margin="11dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_luaspsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btn_hasil_psgpj">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luas : "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_hasilLuaspsgpj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="tv_HasilLuas"
+            android:textSize="20dp"
+            android:textColor="@color/black_tp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout_luaspsg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keliling : "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_hasilKelilingpsgpj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="tv_HasilKeliling"
+            android:textSize="20dp"
+            android:textColor="@color/black_tp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
